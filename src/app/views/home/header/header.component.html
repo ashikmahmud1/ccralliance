@@ -1,0 +1,53 @@
+<header id="home-header" [ngClass]="{'header-fixed': isFixed}">
+  <div class="container" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
+    <div class="header-mobile-top" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
+      <div class="home-logo mr-1">
+        <a href="/"><img src="../../assets/images/logo.jpg" height="50px"></a>
+      </div>
+      <button mat-icon-button id="menu-toggle" (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div fxFlex class="top-menu">
+      <button mat-button  class="hometop-btn" routerLink="/home/one"><strong>Home</strong>
+      </button>
+      <button mat-button  class="hometop-btn" [routerLink]="'/home/what-we-do'"><strong>What We Do</strong>
+      </button>
+      <button mat-button class="hometop-btn" [matMenuTriggerFor]="dropDownInvolve">
+        <strong>Get Involved</strong>
+        <mat-icon class="ml-1">arrow_drop_down</mat-icon>
+      </button>
+      <mat-menu #dropDownInvolve="matMenu" overlapTrigger="false">
+        <button mat-menu-item routerLink="/home/share">
+          <mat-icon>share</mat-icon>
+          <span>Share</span>
+        </button>
+        <button mat-menu-item routerLink="/home/volunteer">
+          <mat-icon>group</mat-icon>
+          <span>Volunteer</span>
+        </button>
+        <button mat-menu-item routerLink="/home/events">
+          <mat-icon>access_time</mat-icon>
+          <span>Events</span>
+        </button>
+      </mat-menu>
+
+      <button mat-button class="hometop-btn" [matMenuTriggerFor]="dropDownAbout">
+        <strong>About</strong>
+        <mat-icon class="ml-1">arrow_drop_down</mat-icon>
+      </button>
+      <mat-menu #dropDownAbout="matMenu" overlapTrigger="false">
+        <button mat-menu-item routerLink="/home/our-team">
+          <mat-icon>group</mat-icon>
+          <span>Our Team</span>
+        </button>
+        <button mat-menu-item routerLink="/home/faq">
+          <mat-icon>help</mat-icon>
+          <span>FAQ</span>
+        </button>
+      </mat-menu>
+      <button mat-button  class="hometop-btn" routerLink="/home/donate"><strong>Donate</strong>
+      </button>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,45 @@
+<section class="home-section home-cta">
+  <div class="container">
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="nowrap" fxLayoutGap="20px">
+      <div fxFlex="50" fxLayoutAlign="center center">
+        <div fxLayout="column">
+          <h2 class="text-center" style="font-weight: 700">TURN HOPE INTO ACTION</h2>
+          <span fxFlex="30"></span>
+          <br>
+          <p style="font-weight: 400;font-size: 18px;text-align: justify">
+            Dogs are our family and our best friends. They deserve the very best we can give.
+            But today, we are losing too many dogs to cancer sometimes even at a very young age.
+            We focus on research and support projects with the most promising ideas to develop
+            cures for cancer. With your help, we will make real impact on saving lives of our dogs.
+          </p>
+        </div>
+      </div>
+      <div fxFlex="50" fxLayoutAlign="center center">
+        <div fxLayout="column">
+          <h2 class="text-center" style="font-weight: 700">KEEP UP WITH THE LATEST NEWS, PROJECTS AND EVENTS</h2>
+          <br>
+          <span fxFlex="30"></span>
+          <form [formGroup]="subscribeForm">
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutWrap="wrap" fxLayoutAlign="center center">
+              <div fxFlex="80">
+                <div class="pb-1">
+                  <mat-form-field class="full-width">
+                    <input matInput name="email" [formControl]="subscribeForm.controls['email']" placeholder="Your Email">
+                  </mat-form-field>
+                  <small *ngIf="subscribeForm.controls.email.touched && subscribeForm.controls.email.errors?.email" class="form-error-msg">Invalid Email</small>
+                </div>
+
+              </div>
+              <div fxFlex="80">
+                <button mat-raised-button mat-lg-button color="accent" class="btn-banner" [disabled]="!subscribeForm.valid">
+                  SUBSCRIBE
+                  <span style="margin-left: 10px;margin-top: 10px;display: inline-block"><mat-icon>send</mat-icon></span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

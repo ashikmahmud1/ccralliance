@@ -1,0 +1,26 @@
+<section class="testimonials-section home-section" style="background: rgba(0, 0, 0, .08); ">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2>BOARD OF DIRECTORS</h2>
+    </div>
+    <ngu-carousel
+      [inputs]="carouselOptions">
+      <ngu-item NguCarouselItem *ngFor="let tm of boardOfDirectors">
+        <mat-card class="p-0">
+          <mat-card-content class="">
+            <img class="company-logo" [src]="tm.logo">
+            <p class="text">{{tm.text}}</p>
+            <div class="user-detail">
+              <span class="toolbar-avatar md user-photo"><img [src]="tm.photo" alt=""></span>
+              <span class="user-title">{{tm.title}}</span>
+              <span class="user-subtitle text-muted">{{tm.subtitle}}</span>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </ngu-item>
+
+      <button mat-fab NguCarouselPrev class='carousel-left'><mat-icon>keyboard_arrow_left</mat-icon></button>
+      <button mat-fab NguCarouselNext class='carousel-right'><mat-icon>keyboard_arrow_right</mat-icon></button>
+    </ngu-carousel>
+  </div>
+</section>
