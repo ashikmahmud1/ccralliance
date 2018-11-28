@@ -1,7 +1,6 @@
 import {Routes} from '@angular/router';
 
 import {HomeOneComponent} from './home-one.component';
-import {HomeTwoComponent} from './home-two.component';
 import {WhatWeDoComponent} from './what-we-do/what-we-do.component';
 import {VolunteerComponent} from './volunteer/volunteer.component';
 import {ShareComponent} from './share/share.component';
@@ -18,6 +17,5 @@ export const HomeRoutes: Routes = [
   {path: 'our-team', component: OurTeamComponent},
   {path: 'faq', component: FaqComponent},
   {path: 'events', component: EventsComponent},
-  {path: 'donate', component: DonateComponent},
-  {path: 'two', component: HomeTwoComponent}
+  {path: 'donate', component: DonateComponent}
 ];
