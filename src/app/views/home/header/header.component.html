@@ -1,8 +1,8 @@
 <header id="home-header" [ngClass]="{'header-fixed': isFixed}">
-  <div class="container" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
+  <div class="container parent-container" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
     <div class="header-mobile-top" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
       <div class="home-logo mr-1">
-        <a href="/"><img src="../../assets/images/logo.jpg" height="50px"></a>
+        <a routerLink="/home/one"><img src="../../assets/images/logo.jpg" height="80px"></a>
       </div>
       <button mat-icon-button id="menu-toggle" (click)="toggleMenu()">
         <mat-icon>menu</mat-icon>

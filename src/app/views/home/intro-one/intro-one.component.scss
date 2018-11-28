@@ -1,15 +1,6 @@
 .home-intro-section {
-  background: url('../../../../assets/images/main-banner.jpg') no-repeat center;
-  //background: url('../../../../assets/images/home-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 180px 0;
-  color: #ffffff;
-  zoom: .75;
-  overflow: hidden;
-  height: 90vh;
+  height: 100vh;
+  position: relative;
 }
 .home-intro-title {
   margin: 0 0 24px;
@@ -60,16 +51,22 @@
   font-size: 14px;
 }
 .btn-banner{
-  margin-top: 60vh;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner-image{
+  padding-top: 110px
 }
 
 @media (max-width: 767px) {
   .home-intro-section {
-    padding: 100px 0 60px;
-    height: 100vh;
+    padding-top: 100px;
+    height: 50vh;
   }
-  .btn-banner{
-    margin-top: 20vh;
+  .banner-image{
+    padding-top: 0;
   }
   .home-intro-title {
     margin: 0 0 30px;
