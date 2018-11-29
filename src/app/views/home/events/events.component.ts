@@ -17,6 +17,10 @@ export class EventsComponent implements OnInit, OnDestroy {
     this.fix.addFix();
   }
 
+  gotoEvents() {
+    window.open('https://www.waglovelife.org/', '_blank');
+  }
+
   ngOnDestroy() {
     this.fix.removeFix();
   }

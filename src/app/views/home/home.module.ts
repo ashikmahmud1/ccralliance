@@ -16,7 +16,6 @@ import {
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {NguCarouselModule} from '@ngu/carousel';
-// import { CommonDirectivesModule } from '../../directives/common/common-directives.module';
 import {SharedModule} from '../../shared/shared.module';
 import {HomeRoutes} from './home.routing';
 
@@ -40,6 +39,9 @@ import {DonateComponent} from './donate/donate.component';
 import {PageNameComponent} from './page-name/page-name.component';
 import {BoardOfDirectorsComponent} from './board-of-directors/board-of-directors.component';
 import {AdvisoryTeamComponent} from './advisory-team/advisory-team.component';
+import {BiomarkersComponent} from './biomarkers/biomarkers.component';
+import {ImmunotherapyComponent} from './immunotherapy/immunotherapy.component';
+import {DataComponent} from './data/data.component';
 
 
 @NgModule({
@@ -81,7 +83,10 @@ import {AdvisoryTeamComponent} from './advisory-team/advisory-team.component';
     DonateComponent,
     PageNameComponent,
     BoardOfDirectorsComponent,
-    AdvisoryTeamComponent
+    AdvisoryTeamComponent,
+    BiomarkersComponent,
+    ImmunotherapyComponent,
+    DataComponent
   ],
   providers: [WINDOW_PROVIDERS]
 

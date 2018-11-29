@@ -8,6 +8,9 @@ import {OurTeamComponent} from './our-team/our-team.component';
 import {FaqComponent} from './faq/faq.component';
 import {EventsComponent} from './events/events.component';
 import {DonateComponent} from './donate/donate.component';
+import {DataComponent} from './data/data.component';
+import {ImmunotherapyComponent} from './immunotherapy/immunotherapy.component';
+import {BiomarkersComponent} from './biomarkers/biomarkers.component';
 
 export const HomeRoutes: Routes = [
   {path: 'one', component: HomeOneComponent},
@@ -17,5 +20,8 @@ export const HomeRoutes: Routes = [
   {path: 'our-team', component: OurTeamComponent},
   {path: 'faq', component: FaqComponent},
   {path: 'events', component: EventsComponent},
-  {path: 'donate', component: DonateComponent}
+  {path: 'donate', component: DonateComponent},
+  {path: 'data', component: DataComponent},
+  {path: 'immunotherapy', component: ImmunotherapyComponent},
+  {path: 'biomarkers', component: BiomarkersComponent}
 ];
